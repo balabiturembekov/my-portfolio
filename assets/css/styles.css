@@ -159,10 +159,65 @@ img {
 }
 
 /*=============== HEADER & NAV===============*/
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--body-color);
+    z-index: var(--z-fixed);
+}
 
+.nav {
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo {
+    font-weight: var(--font-semibold);
+    color: var(--first-color);
+    transition: .4s ease;
+}
+
+.nav__logo:hover {
+    color: var(--first-color-alt);
+}
+
+.nav__menu {
+    position: fixed;
+    bottom: 0;
+    background-color: hsl(var(--second-hue), 32%, 16%, .8);
+    width: 90%;
+    border-radius: 4rem;
+    padding: 1rem 2.25rem;
+    backdrop-filter: blur(10px);
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__link {
+    font-size: 1.25rem;
+    color: var(--text-color);
+    padding: .4rem;
+    display: flex;
+    border-radius: 5rem;
+}
 
 /* Active link */
-
+.active-link {
+    background: linear-gradient(
+    180deg,
+    hsla(var(--first-hue), var(--sat), var(--lig), 1),
+    hsla(var(--first-hue), var(--sat), var(--lig), .2)
+    );
+    box-shadow: 0 0 16px hsla(var(--first-hue), var(--sat), var(--lig), 2);
+}
 
 /* Change background header */
 
