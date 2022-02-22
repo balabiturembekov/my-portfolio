@@ -566,10 +566,66 @@ img {
 }
 
 /*=============== WORK ===============*/
+.work__filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: .75rem;
+    margin-bottom: 2rem;
+}
 
+.work__container {
+    padding-top: 1rem;
+}
+
+.work__item {
+    color: var(--title-color);
+    padding: .25rem .75rem;
+    cursor: pointer;
+    font-weight: var(--font-medium);
+    border-radius: .5rem;
+}
+
+.work__card {
+    background-color: var(--container-color);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.work__img {
+    border-radius: 1rem;
+    margin-bottom: .75rem;
+}
+
+.work__title {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: .25rem;
+}
+
+.work__button {
+    display: flex;
+    align-items: center;
+    column-gap: .25rem;
+    font-size: var(--small-font-size);
+    color: var(--first-color);
+    width: max-content;
+}
+
+.work__button:hover .work__icon {
+    transform: translateX(.25rem);
+}
+
+.work__icon {
+    font-size: 1rem;
+    transition: .4s ease;
+}
 
 /* Active item work*/
-
+.active-work {
+    background-color: var(--first-color);
+    color: var(--body-color);
+}
 
 /*=============== TESTIMONIAL ===============*/
 
